@@ -23,6 +23,9 @@ class User extends Authenticatable
     use UuidTrait;
     use TwoFactorAuthenticatable;
 
+    protected $keyType = 'string';
+    protected $primaryKey = 'id';
+
     /**
      * The attributes that are mass assignable.
      *
